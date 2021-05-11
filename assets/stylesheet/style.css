@@ -1,0 +1,31 @@
+:root {
+  --first-color: #14c48a;
+  --second-color: #5a379a;
+  --third-color: #ffffff;
+  --fourth-color: #ababab;
+  --fifth-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--first-color);
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  color: var(--third-color);
+}

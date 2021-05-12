@@ -10,12 +10,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
   background: var(--first-color);
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
 }
 
 a {
@@ -28,4 +30,41 @@ button {
   border: none;
   outline: none;
   color: var(--third-color);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 1em 3em;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--first-color);
+}
+
+.nav__title h1 {
+  color: var(--third-color);
+  letter-spacing: 0.12em;
+}
+
+.nav img {
+  width: 1.8em;
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1em 0.8em;
+  }
+
+  .nav__title h1 {
+    font-size: calc(1.4rem + 1vw);
+  }
+
+  .nav img {
+    width: 1.4em;
+  }
 }

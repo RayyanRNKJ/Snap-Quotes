@@ -2,7 +2,6 @@
   --first-color: #14c48a;
   --second-color: #5a379a;
   --third-color: #ffffff;
-  --fourth-color: #ababab;
   --fifth-color: #000000;
 }
 
@@ -32,18 +31,24 @@ button {
   color: var(--third-color);
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   padding: 1em 3em;
+  background: var(--first-color);
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--first-color);
 }
 
 .nav__title h1 {
@@ -53,6 +58,42 @@ button {
 
 .nav img {
   width: 1.8em;
+}
+
+.quote-section {
+  padding: 9em 0 5em;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.quote-section h2 {
+  color: var(--second-color);
+  text-align: center;
+  max-width: 15em;
+  letter-spacing: 0.13em;
+}
+
+.quote-section p{
+  font-weight: 500;
+  color: var(--third-color);
+}
+
+.snap-section{
+  padding-bottom: 2em;
+}
+
+.snap-section button{
+  padding: 0.7em 3em;
+  border: 0.2em solid var(--third-color);
+  border-radius: 10em;
+  background: transparent;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.snap-section button:hover{
+  background: var(--third-color);
+  color: var(--first-color);
 }
 
 @media only screen and (max-width: 576px) {
@@ -66,5 +107,10 @@ button {
 
   .nav img {
     width: 1.4em;
+  }
+
+  .quote-section h2{
+    font-size: calc(1.8rem + 1vw);
+    max-width: 10em;
   }
 }
